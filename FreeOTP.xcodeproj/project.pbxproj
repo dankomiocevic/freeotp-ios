@@ -27,6 +27,9 @@
 		2887CDD824585E03004891D3 /* URIMainIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887CDD724585E03004891D3 /* URIMainIconViewController.swift */; };
 		28C0090323EDCC0B0034A321 /* URILabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0090223EDCC0B0034A321 /* URILabelViewController.swift */; };
 		28C0090523EDE4840034A321 /* URIParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0090423EDE4840034A321 /* URIParameters.swift */; };
+		D2AD2B7A25291D7700562DC7 /* nfc.png in Resources */ = {isa = PBXBuildFile; fileRef = D2AD2B7925291D7600562DC7 /* nfc.png */; };
+		D2AD2B7E2529240E00562DC7 /* ScanNFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD2B7D2529240E00562DC7 /* ScanNFCViewController.swift */; };
+		D2AD2B8125292C5000562DC7 /* nfcButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2AD2B8025292C4F00562DC7 /* nfcButton.png */; };
 		F10D88C41B56A3C400482D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D88C31B56A3C400482D15 /* AppDelegate.swift */; };
 		F10D88C91B56A3C400482D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D88C71B56A3C400482D15 /* Main.storyboard */; };
 		F10D88CB1B56A3C400482D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D88CA1B56A3C400482D15 /* Assets.xcassets */; };
@@ -87,6 +90,10 @@
 		2887CDD724585E03004891D3 /* URIMainIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIMainIconViewController.swift; sourceTree = "<group>"; };
 		28C0090223EDCC0B0034A321 /* URILabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URILabelViewController.swift; sourceTree = "<group>"; };
 		28C0090423EDE4840034A321 /* URIParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIParameters.swift; sourceTree = "<group>"; };
+		D2AD2B7925291D7600562DC7 /* nfc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nfc.png; sourceTree = "<group>"; };
+		D2AD2B7D2529240E00562DC7 /* ScanNFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNFCViewController.swift; sourceTree = "<group>"; };
+		D2AD2B7F252926DB00562DC7 /* FreeOTP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FreeOTP.entitlements; sourceTree = "<group>"; };
+		D2AD2B8025292C4F00562DC7 /* nfcButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nfcButton.png; sourceTree = "<group>"; };
 		F10D88C01B56A3C400482D15 /* FreeOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10D88C31B56A3C400482D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10D88C81B56A3C400482D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,9 +200,12 @@
 		F10D88C21B56A3C400482D15 /* FreeOTP */ = {
 			isa = PBXGroup;
 			children = (
+				D2AD2B7F252926DB00562DC7 /* FreeOTP.entitlements */,
 				F1CA93DB1B56ABB900828B8B /* FreeOTP-Bridging-Header.h */,
 				F1CA93D31B56AB9500828B8B /* iTunesArtwork@2x */,
+				D2AD2B7925291D7600562DC7 /* nfc.png */,
 				F1CA93D41B56AB9500828B8B /* default.png */,
+				D2AD2B8025292C4F00562DC7 /* nfcButton.png */,
 				F1CA93D51B56AB9500828B8B /* qrcode.png */,
 				F1CA93D61B56AB9500828B8B /* token.png */,
 				F19DA56F1B5EE73E00A54DDC /* lock.png */,
@@ -250,6 +260,7 @@
 				283FC22223F19EB600491B5E /* URIIconViewController.swift */,
 				2820C85923EE53CB002D3695 /* URILockViewController.swift */,
 				2442F8132493B39000678697 /* MainNavigationController.swift */,
+				D2AD2B7D2529240E00562DC7 /* ScanNFCViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -331,6 +342,7 @@
 				TargetAttributes = {
 					F10D88BF1B56A3C400482D15 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 3KX2N9287K;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -369,7 +381,9 @@
 				F1CA93D71B56AB9500828B8B /* iTunesArtwork@2x in Resources */,
 				F10D88CB1B56A3C400482D15 /* Assets.xcassets in Resources */,
 				F1CA93D91B56AB9500828B8B /* qrcode.png in Resources */,
+				D2AD2B7A25291D7700562DC7 /* nfc.png in Resources */,
 				F10D88C91B56A3C400482D15 /* Main.storyboard in Resources */,
+				D2AD2B8125292C5000562DC7 /* nfcButton.png in Resources */,
 				F19DA5701B5EE73E00A54DDC /* lock.png in Resources */,
 				F19DA56E1B5C832600A54DDC /* Launch.storyboard in Resources */,
 				F1CA93D81B56AB9500828B8B /* default.png in Resources */,
@@ -429,6 +443,7 @@
 				28C0090323EDCC0B0034A321 /* URILabelViewController.swift in Sources */,
 				F10D89021B56A54B00482D15 /* CircleProgressView.swift in Sources */,
 				2820C85A23EE53CB002D3695 /* URILockViewController.swift in Sources */,
+				D2AD2B7E2529240E00562DC7 /* ScanNFCViewController.swift in Sources */,
 				F10D890E1B56A54B00482D15 /* TokenStore.swift in Sources */,
 				F10D890F1B56A54B00482D15 /* TokensViewController.swift in Sources */,
 				282341B4245A13D000025167 /* RecommendedIconCell.swift in Sources */,
@@ -596,17 +611,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FreeOTP/FreeOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KX2N9287K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FreeOTP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = org.fedorahosted.freeotp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miocevic.freeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -616,17 +633,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FreeOTP/FreeOTP.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KX2N9287K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FreeOTP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = org.fedorahosted.freeotp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miocevic.freeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

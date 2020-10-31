@@ -116,6 +116,18 @@ class TokensViewController : UICollectionViewController, UICollectionViewDelegat
         }
     }
 
+    @IBAction func scanNFCClicked(_ sender: UIBarButtonItem) {
+        showNFCScanScreen(sender)
+    }
+
+    private func showNFCScanScreen(_ sender: AnyObject) {
+      let vc: UIViewController = self.next("scanNFC", sender: sender, dir: [.up, .down])
+      vc.preferredContentSize = CGSize(
+          width: UIScreen.main.bounds.width / 2,
+          height: vc.preferredContentSize.height
+      )
+    }
+
     @IBAction func scanClicked(_ sender: UIBarButtonItem) {
         showScanScreen(sender)
     }
@@ -176,7 +188,7 @@ class TokensViewController : UICollectionViewController, UICollectionViewDelegat
                                 array.append(currPath)
                                 self.collectionView.deleteItems(at: array)
                             }
-
+                          
                             let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
                                 UIView.animate(withDuration: 0.3, animations: {
                                     cell.transform = .identity
